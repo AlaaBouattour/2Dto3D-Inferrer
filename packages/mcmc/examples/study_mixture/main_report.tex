@@ -1,0 +1,119 @@
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath,amssymb}
+
+\title{Étude MCMC - MixtureOfUniforms}
+\author{Alaa, Amadou, Rayen}
+\date{\today}
+\begin{document}
+
+\maketitle
+
+\section{Explication de l'Expérience}
+Nous considérons un mélange de deux lois Uniform. Les paramètres $(u,l)$ 
+définissent la première loi Uniform$(u,u+l)$, tandis que $(u2,l2)$ définissent 
+la seconde loi Uniform$(u2,u2+l2)$. Une observation est tirée de la première loi 
+avec probabilité $\alpha$, et de la seconde loi sinon. Nous cherchons à estimer 
+$(u,l,u2,l2,\alpha)$ par MCMC et à mesurer l'erreur de convergence.
+
+\section{Baseline}
+Si un run est étiqueté \texttt{baseline}, nous le présentons ci-dessous, puis 
+comparons les autres runs qui ne diffèrent de \texttt{baseline} que par un seul 
+paramètre.
+
+\input{output/run_snippet_baseline.tex}
+
+\section*{Variation de n\_sim}
+
+\input{output/run_snippet_nsim_low.tex}
+
+\input{output/run_snippet_nsim_high.tex}
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[width=0.6\textwidth]{output/compare\_n\_sim\_err.png}
+
+  \caption{Comparaison de err\_global (baseline vs variations de n\_sim)}
+
+\end{figure}
+
+
+\section*{Variation de bandwidth}
+
+\input{output/run_snippet_bw_low.tex}
+
+\input{output/run_snippet_bw_high.tex}
+
+\input{output/run_snippet_bw_higher.tex}
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[width=0.6\textwidth]{output/compare\_bandwidth\_err.png}
+
+  \caption{Comparaison de err\_global (baseline vs variations de bandwidth)}
+
+\end{figure}
+
+
+\section*{Variation de proposal\_scale}
+
+\input{output/run_snippet_pscale_med.tex}
+
+\input{output/run_snippet_pscale_high.tex}
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[width=0.6\textwidth]{output/compare\_proposal\_scale\_err.png}
+
+  \caption{Comparaison de err\_global (baseline vs variations de proposal\_scale)}
+
+\end{figure}
+
+
+\section*{Variation de n\_iter}
+
+\input{output/run_snippet_niter_low.tex}
+
+\input{output/run_snippet_niter_high.tex}
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[width=0.6\textwidth]{output/compare\_n\_iter\_err.png}
+
+  \caption{Comparaison de err\_global (baseline vs variations de n\_iter)}
+
+\end{figure}
+
+
+\section*{Variation de N}
+
+\input{output/run_snippet_N_50.tex}
+
+\input{output/run_snippet_N_300.tex}
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[width=0.6\textwidth]{output/compare\_N\_err.png}
+
+  \caption{Comparaison de err\_global (baseline vs variations de N)}
+
+\end{figure}
+
+
+
+\end{document}

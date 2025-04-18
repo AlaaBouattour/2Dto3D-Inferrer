@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frequentist"
+version = "0.1.0"
+description = "A package for Frequentist estimation methods (distance-based + optimizers)."
+authors = [
+    { name = "Rayen, Alaa, Amadou" }
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib"  # if you ever plot inside the code
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

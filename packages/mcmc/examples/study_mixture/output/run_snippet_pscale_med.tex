@@ -1,0 +1,40 @@
+% --- Snippet for run pscale\_med ---
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.45\textwidth}
+    \vspace{0pt}
+    \footnotesize
+    \begin{tabular}{|l|l|}\hline
+    \multicolumn{2}{|c|}{\textbf{Run pscale\_med}} \\ \hline
+    $N$ & 200 \\ \hline
+    bandwidth & 0.05 \\ \hline
+    n\_sim & 2000 \\ \hline
+    proposal\_scale & 0.3 \\ \hline
+    n\_iter & 3000 \\ \hline
+    pm\_u & 1.00 \\ \hline
+    pm\_l & 1.48 \\ \hline
+    pm\_u2 & 5.07 \\ \hline
+    pm\_l2 & 2.90 \\ \hline
+    pm\_alpha & 0.38 \\ \hline
+    err\_u & 0.004 \\ \hline
+    err\_l & 0.021 \\ \hline
+    err\_u2 & 0.070 \\ \hline
+    err\_l2 & 0.097 \\ \hline
+    err\_alpha & 0.019 \\ \hline
+    err\_global & 0.123 \\ \hline
+    \end{tabular}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.45\textwidth}
+    \vspace{0pt}
+    \includegraphics[width=\textwidth]{output/trace\_pscale\_med.png}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{output/randomwalk\_pscale\_med.png}
+  \caption{Random-walk pour run \texttt{pscale\_med}}
+\end{figure}
+

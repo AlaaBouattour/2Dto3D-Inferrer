@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcmc"
+version = "0.1.0"
+description = "Package for MCMC sampling methods used for parametric inference."
+authors = [
+    { name = "Rayen, Alaa, Amadou" }
+]
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "scipy"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

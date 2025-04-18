@@ -1,0 +1,25 @@
+# params.txt
+
+N=200 ; bandwidth=0.05 ; n_sim=2000 ; proposal_scale=0.1 ; n_iter=3000 ; name=baseline
+
+# Variation de bandwidth
+N=200 ; bandwidth=0.01 ; n_sim=2000 ; proposal_scale=0.1 ; n_iter=3000 ; name=bw_low
+N=200 ; bandwidth=0.1 ; n_sim=2000 ; proposal_scale=0.1 ; n_iter=3000 ; name=bw_high
+N=200 ; bandwidth=0.5 ; n_sim=2000 ; proposal_scale=0.1 ; n_iter=3000 ; name=bw_higher
+
+# Variation de n_sim
+N=200 ; bandwidth=0.05 ; n_sim=500 ; proposal_scale=0.1 ; n_iter=3000 ; name=nsim_low
+N=200 ; bandwidth=0.05 ; n_sim=5000 ; proposal_scale=0.1 ; n_iter=3000 ; name=nsim_high
+
+# Variation de proposal_scale
+N=200 ; bandwidth=0.05 ; n_sim=2000 ; proposal_scale=0.3 ; n_iter=3000 ; name=pscale_med
+N=200 ; bandwidth=0.05 ; n_sim=2000 ; proposal_scale=0.5 ; n_iter=3000 ; name=pscale_high
+
+# Variation de n_iter
+N=200 ; bandwidth=0.05 ; n_sim=2000 ; proposal_scale=0.1 ; n_iter=1000 ; name=niter_low
+N=200 ; bandwidth=0.05 ; n_sim=2000 ; proposal_scale=0.1 ; n_iter=5000 ; name=niter_high
+
+# Variation de N
+N=50 ; bandwidth=0.05 ; n_sim=2000 ; proposal_scale=0.1 ; n_iter=3000 ; name=N_50
+N=300 ; bandwidth=0.05 ; n_sim=2000 ; proposal_scale=0.1 ; n_iter=3000 ; name=N_300
+

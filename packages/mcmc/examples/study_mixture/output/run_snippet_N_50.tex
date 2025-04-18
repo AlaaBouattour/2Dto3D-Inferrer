@@ -1,0 +1,40 @@
+% --- Snippet for run N\_50 ---
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.45\textwidth}
+    \vspace{0pt}
+    \footnotesize
+    \begin{tabular}{|l|l|}\hline
+    \multicolumn{2}{|c|}{\textbf{Run N\_50}} \\ \hline
+    $N$ & 50 \\ \hline
+    bandwidth & 0.05 \\ \hline
+    n\_sim & 2000 \\ \hline
+    proposal\_scale & 0.1 \\ \hline
+    n\_iter & 3000 \\ \hline
+    pm\_u & 1.07 \\ \hline
+    pm\_l & 1.42 \\ \hline
+    pm\_u2 & 4.85 \\ \hline
+    pm\_l2 & 3.09 \\ \hline
+    pm\_alpha & 0.50 \\ \hline
+    err\_u & 0.071 \\ \hline
+    err\_l & 0.078 \\ \hline
+    err\_u2 & 0.148 \\ \hline
+    err\_l2 & 0.088 \\ \hline
+    err\_alpha & 0.097 \\ \hline
+    err\_global & 0.224 \\ \hline
+    \end{tabular}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.45\textwidth}
+    \vspace{0pt}
+    \includegraphics[width=\textwidth]{output/trace\_N\_50.png}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{output/randomwalk\_N\_50.png}
+  \caption{Random-walk pour run \texttt{N\_50}}
+\end{figure}
+

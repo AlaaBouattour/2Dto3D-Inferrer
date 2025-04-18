@@ -1,0 +1,40 @@
+% --- Snippet for run baseline ---
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.45\textwidth}
+    \vspace{0pt}
+    \footnotesize
+    \begin{tabular}{|l|l|}\hline
+    \multicolumn{2}{|c|}{\textbf{Run baseline}} \\ \hline
+    $N$ & 200 \\ \hline
+    bandwidth & 0.05 \\ \hline
+    n\_sim & 2000 \\ \hline
+    proposal\_scale & 0.1 \\ \hline
+    n\_iter & 3000 \\ \hline
+    pm\_u & 1.06 \\ \hline
+    pm\_l & 1.49 \\ \hline
+    pm\_u2 & 4.96 \\ \hline
+    pm\_l2 & 3.06 \\ \hline
+    pm\_alpha & 0.38 \\ \hline
+    err\_u & 0.065 \\ \hline
+    err\_l & 0.011 \\ \hline
+    err\_u2 & 0.041 \\ \hline
+    err\_l2 & 0.063 \\ \hline
+    err\_alpha & 0.016 \\ \hline
+    err\_global & 0.101 \\ \hline
+    \end{tabular}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.45\textwidth}
+    \vspace{0pt}
+    \includegraphics[width=\textwidth]{output/trace\_baseline.png}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{output/randomwalk\_baseline.png}
+  \caption{Random-walk pour run \texttt{baseline}}
+\end{figure}
+

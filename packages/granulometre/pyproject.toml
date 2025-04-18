@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "granulometre"
+version = "0.1.0"
+description = "Package for simulating the granulometer: generation, rotation, and projection of 3D ellipsoids."
+authors = [
+    { name = "Rayen, Alaa, Amadou" }
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
