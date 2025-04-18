@@ -89,8 +89,3 @@ You can also run test scripts such as `tests/test_libs_abc.py` to see how to use
 3. Compare with observed 2D data.
 4. Infer the parameters of the 3D distribution.
 
-## Contributing
-
-
-## License
-
