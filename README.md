@@ -89,53 +89,6 @@ You can also run test scripts such as `tests/test_libs_abc.py` to see how to use
 3. Compare with observed 2D data.
 4. Infer the parameters of the 3D distribution.
 
-## Project Structure
-
-```
-biomasse/
-├── packages/
-│   ├── abc_sampling/
-│   │   ├── pyproject.toml      
-│   │   ├── README.md
-│   │   └── src/
-│   │       └── abc_sampling/
-│   │           ├── __init__.py
-│   │           ├── abc.py
-│   │           ├── prior_samplers.py
-│   │           ├── utils.py
-│   │           └── [other modules]
-│   ├── granulometre/
-│   │   ├── pyproject.toml      
-│   │   ├── README.md
-│   │   └── src/
-│   │       └── granulometre/
-│   │           ├── __init__.py
-│   │           ├── generator/
-│   │           │   ├── __init__.py
-│   │           │   ├── generator.py
-│   │           │   └── distributions.py
-│   │           ├── rotation/
-│   │           │   ├── __init__.py
-│   │           │   └── random_rotation.py
-│   │           └── projection/
-│   │               ├── __init__.py
-│   │               └── projection.py
-│   └── mcmc/
-│       ├── pyproject.toml      
-│       ├── README.md
-│       └── src/
-│           └── mcmc/
-│               ├── __init__.py
-│               ├── mcmc_sampler.py
-├── tests/
-│   ├── __init__.py
-│   └── test_libs_abc.py
-├── Bibliographie/
-├── README.md
-└── ...
-
-```
-
 ## Contributing
 
 
